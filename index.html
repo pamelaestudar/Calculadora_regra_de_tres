@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres da página como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a viewport para dispositivos móveis, garantindo que a página seja exibida corretamente em diferentes tamanhos de tela -->
+    <title>Calculadora de Regra de 3</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o arquivo CSS externo que contém os estilos da página -->
+</head>
+<body>
+    <!-- Corpo do documento HTML -->
+    <div class="calculator">
+        <!-- Div para conter toda a calculadora com a classe 'calculator' para estilização -->
+        <h1>Calculadora de Regra de 3</h1>
+        <!-- Cabeçalho da calculadora -->
+        <div class="formula">
+            <!-- Div para organizar os elementos na fórmula -->
+            <div class="fraction">
+                <!-- Div para agrupar os elementos da fração -->
+                <div class="numerator">
+                    <!-- Div para agrupar os elementos do numerador -->
+                    <label for="valueA">A:</label>
+                    <!-- Rótulo para o campo de entrada de 'Valor A' -->
+                    <input type="number" id="valueA">
+                    <!-- Campo de entrada para 'Valor A', do tipo número, com id 'valueA' -->
+                </div>
+                <div class="denominator">
+                    <!-- Div para agrupar os elementos do denominador -->
+                    <label for="valueB">B:</label>
+                    <!-- Rótulo para o campo de entrada de 'Valor B' -->
+                    <input type="number" id="valueB">
+                    <!-- Campo de entrada para 'Valor B', do tipo número, com id 'valueB' -->
+                </div>
+            </div>
+            <span>=</span>
+            <!-- Símbolo de igual entre as duas frações -->
+            <div class="fraction">
+                <!-- Div para agrupar os elementos da fração -->
+                <div class="numerator">
+                    <!-- Div para agrupar os elementos do numerador -->
+                    <label for="valueC">C:</label>
+                    <!-- Rótulo para o campo de entrada de 'Valor C' -->
+                    <input type="number" id="valueC">
+                    <!-- Campo de entrada para 'Valor C', do tipo número, com id 'valueC' -->
+                </div>
+                <div class="denominator">
+                    <!-- Div para agrupar os elementos do denominador -->
+                    <label for="valueD">D:</label>
+                    <!-- Rótulo para o campo de entrada de 'Valor D' -->
+                    <input type="text" id="valueD" readonly>
+                    <!-- Campo de entrada para 'Valor D', do tipo texto, com id 'valueD' e readonly para impedir a edição -->
+                </div>
+            </div>
+        </div>
+        <button onclick="calculate()">Calcular</button>
+        <!-- Botão que, ao ser clicado, chama a função 'calculate()' definida no arquivo script.js -->
+    </div>
+    <script src="script.js"></script>
+    <!-- Inclui o arquivo JavaScript externo com a lógica da calculadora -->
+</body>
+</html>
+
+
